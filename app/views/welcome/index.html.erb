@@ -1,0 +1,19 @@
+<!--<h1>Welcome#index</h1>-->
+<!--<p>Find me in app/views/welcome/index.html.erb</p>-->
+
+<h1>Welcome to my Travel Site</h1>
+<p>Stay tuned for cool travel stuff!</p>
+
+<h2> My Home State is <%= @homestate %> </h2>
+
+<ul>
+<% @countries.each do |country| %>
+    <li><%= country %><br> <%= image_tag country, alt: "Country Flag", class: "flag" %> </li>
+<% end %>
+</ul>
+
+
+
+<% @images.each do |image| %>
+  <%= image_tag image %>
+<% end %>
