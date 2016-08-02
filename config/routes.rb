@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'index' => 'welcome#index'
 
   get 'about' => 'welcome#about'
+  
+  get 'contact' => 'welcome#contact'
 
 
 

@@ -12,4 +12,9 @@ class WelcomeController < ApplicationController
     @shoe_size = params[:size].to_i
       
   end
+
+  def contact
+  
+  end
+
 end
