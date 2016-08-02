@@ -25,9 +25,20 @@
  
  body {
      padding-top: 70px;
+     background: url(<%= asset_path "bg.jpg" %>);
+     background-size: cover;
+     background-position: fixed;
+     background-repeat: no-repeat;
  }
+
+.container {
+  background: rgba(255,255,255,0.4);
+}
 
 .image-fix {
     max-width: 400px;
 }
 
+.navbar-default .navbar-brand {
+    font-family: Ruthie, cursive;
+}
