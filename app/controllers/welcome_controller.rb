@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   def index
     @homestate = 'Arizona'
     @countries = ['Italy', 'Scotland', 'Iceland', 'Japan']
-    @images    = ['Iceland_place.jpg', 'Japan_place.jpg', 'Italy_place.jpg', 'scotland_image.jpeg']
+    @images    = ['Iceland_place.jpg', 'Japan_place.jpg', 'Italy_place.jpg', 'scotland_image.jpeg'].shuffle
     @united_states = {'favorite city'=>'Phoenix', 
                       'favorite city'=>'Atlanta', 
                       'favorite state'=>'Washington', 
