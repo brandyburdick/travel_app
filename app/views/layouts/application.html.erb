@@ -17,6 +17,15 @@
 </head>
 
 <body>
+  
+  <% if notice != nil %>
+    <p id="notice" class="alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+      <%= notice %>
+    </p>
+  <% end %>
+  
   <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -51,5 +60,8 @@
     <%= yield %>
   </div>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+        crossorigin="anonymous"></script>
 </body>
 </html>

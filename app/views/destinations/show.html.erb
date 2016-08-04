@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <p>
   <strong>City:</strong>
@@ -13,6 +13,15 @@
 <p>
   <strong>Description:</strong>
   <%= @destination.description %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @destination.population %>
+</p>
+
+<p>
+<%= image_tag @destination.photo.url(:medium) %>
 </p>
 
 <%= link_to 'Edit', edit_destination_path(@destination) %> |

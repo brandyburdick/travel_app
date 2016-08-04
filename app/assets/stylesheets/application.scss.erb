@@ -27,7 +27,8 @@
      padding-top: 70px;
      background: url(<%= asset_path "bg.jpg" %>);
      background-size: cover;
-     background-position: fixed;
+     background-position: left top;
+     background-attachment: fixed;
      background-repeat: no-repeat;
  }
 
@@ -42,3 +43,13 @@
 .navbar-default .navbar-brand {
     font-family: Ruthie, cursive;
 }
+
+div.panel-body p > a {
+    text-decoration: none;
+    color: black;
+    
+    &:hover {
+        color: green;
+    }
+}
+
