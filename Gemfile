@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'jquery-turbolinks'
+gem 'figaro'
 gem 'paperclip'
 gem 'awesome_print'
 gem 'bootstrap-sass'

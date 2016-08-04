@@ -11,7 +11,34 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function (){
+
+    function initialize() {
+        var myLatLng = new google.maps.LatLng(33.491988, -112.070603);
+        
+        var mapOptions = {
+        center: myLatLng,
+        zoom: 15
+        };
+        
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);  
+       
+        var image = "<%= asset_path 'cohootslogo.jpg'%>";    
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'CO+HOOTS',
+            icon: image,
+        }); 
+        
+    }
+      
+    google.maps.event.addDomListener(window, 'load', initialize);
+});
